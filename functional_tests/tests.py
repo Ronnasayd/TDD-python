@@ -1,7 +1,6 @@
 from selenium import webdriver
 import os
 from selenium.webdriver.common.keys import Keys
-import unittest
 from django.test import LiveServerTestCase
 
 
@@ -53,7 +52,3 @@ class NewVisitorTest(LiveServerTestCase):
             '2: Use peacock feathers to make a fly')
 
         self.fail('Finish the test!')
-
-
-if __name__ == "__main__":
-    unittest.main(warnings='ignore')
