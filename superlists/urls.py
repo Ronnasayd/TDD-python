@@ -20,4 +20,6 @@ import lists.views
 urlpatterns = [
     path('', lists.views.home_page, name='home'),
     path('admin/', admin.site.urls),
+    path('lists/the-only-list-in-the-world/',
+         lists.views.view_list, name='view_list'),
 ]
