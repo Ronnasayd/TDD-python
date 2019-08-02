@@ -1,11 +1,11 @@
 from selenium import webdriver
 import os
 from selenium.webdriver.common.keys import Keys
-from django.test import LiveServerTestCase
+from django.contrib.staticfiles.testing import StaticLiveServerTestCase
 import time
 
 
-class NewVisitorTest(LiveServerTestCase):
+class NewVisitorTest(StaticLiveServerTestCase):
     def setUp(self):
         self.path = os.path.dirname(os.path.abspath(__file__))
         self.browser = webdriver.Chrome(self.path+'/chromedriver')
