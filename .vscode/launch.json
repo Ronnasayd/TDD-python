@@ -52,6 +52,7 @@
             "console": "integratedTerminal",
             "args": [
                 "test",
+                "functional_tests/",
             ],
             "django": true
         },
